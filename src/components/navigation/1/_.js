@@ -1,4 +1,4 @@
-import { scroll } from 'libs/animation';
+import { scroll } from 'libs/internal/animation';
 
 export default function() {
 
@@ -24,7 +24,7 @@ export default function() {
 
         let target = document.querySelector(`#${ trigger.attributes['data-target'].value }`);
 
-        trigger.querySelector('button').addEventListener('click', function(event) {
+        trigger.addEventListener('click', function(event) {
 
             // prefer native implementation
             if ('scrollBehavior' in document.documentElement.style) {
@@ -36,9 +36,7 @@ export default function() {
                 scroll(target.offsetTop, duration);
 
             }
-
-            event.stopPropagation();
-
+            event.stopPropagation;
         });
     }
 
