@@ -1,11 +1,27 @@
 .front
     background: url("images/home/_inline/background.jpg")
+    @keyframes animatedBackground {
+	    0% { background-position: 0 0; }
+	    100% { background-position: -1902px 0; }
+    }
+    @media only screen and (max-width: 600px) {
+        animation: animatedBackground 40s linear infinite;
+    }
+    @media only screen and (max-width: 1000px) {
+        animation: animatedBackground 60s linear infinite;
+    }
+    @media only screen and (min-height: 1300px) {
+        background: url("images/home/_inline/Bild_Band.jpg")
+        animation: animatedBackground 60s linear infinite;
+    }
     .content
         flex-flow: column wrap
         align-items: center
         justify-content: center
         +min(2)
             margin-top: -20px
+            align-items: center        
+            justify-content: center
         h2
             font-size: 2.3rem
             font-weight: 600
@@ -33,6 +49,7 @@
                 font-size: 1.4rem
                 text-align: center
                 margin: rem(15px) 0 rem(30px)
+                backdrop-filter: blur(2px)
                 color: #FFFFFF
                 line-height: 1.2
                 +min(1)
@@ -45,14 +62,13 @@
             div
                 display: flex
                 flex-flow: row wrap
-                filter: blur(8px)
-                -webkit-filter: blur(8px)
                 justify-content: center
                 width: 100%
                 +min(1)
                     width: auto
                 a
                     button(large, color: #FC0D32)
+                    backdrop-filter: blur(10px)
                     margin: rem(8px) 0
                     min-width: 60%
                     +min(1)
