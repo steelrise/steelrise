@@ -1,6 +1,19 @@
 {
   "name": "new-project",
   "version": "1.0.0",
+  "scripts": {
+    "start": "npm run develop",
+    "develop": "NODE_ENV=development gulp -S",
+    "build": "gulp build",
+    "lint": "eslint --fix src/",
+    "preflight": "gulp preflight",
+    "deploy": "gulp deploy",
+    "serve": "gulp serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@example.com:user/repository.git"
+  },
   "private": true,
   "license": "UNLICENSED",
   "homepage": "http://example.com",
