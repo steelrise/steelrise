@@ -7,8 +7,9 @@ mixin header-1(url, icon, h1, navigation, hook)
 
         div
             h1
-                a(href=url)
-                    svg: use(xlink:href="/assets/images/_sprites/symbols.svg#" + icon)
+                a(href=url class="logo")
+                    if icon
+                        svg: use(xlink:href="/assets/images/_sprites/symbols.svg#" + icon)
                     =h1
 
             nav(id="navigation" role="navigation" itemscope itemtype="https://schema.org/SiteNavigationElement")
@@ -16,7 +17,7 @@ mixin header-1(url, icon, h1, navigation, hook)
                 button
                     svg: use(xlink:href="/assets/images/_sprites/symbols.svg#header-1-nav-button")
 
-                ul
+                ul#mobile_view
                     for anchor in navigation
 
                         li

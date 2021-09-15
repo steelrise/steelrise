@@ -1,5 +1,16 @@
 section(class="canvas front" id="front")
 
+    script. 
+        document.getElementById("navigation").addEventListener("click", function () {
+            if (document.getElementById("mobile_view").style.opacity == 1){
+                document.getElementById("mobile_view").removeAttribute("style");
+            }
+            else{
+                document.getElementById("mobile_view").style.display = "block";
+                document.getElementById("mobile_view").style.opacity = 1;
+            }
+        });
+
     div(class="content")
 
         h2 STEELRISE

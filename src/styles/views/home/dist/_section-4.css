@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
+@media only screen and (max-width: 800px) {
+  .section-4 .content {
+    width: 100%;
+  }
+}
+.section-4 .content div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.section-4 .content button {
+  overflow: visible;
+}
+.section-4 .content button,
+.section-4 .content select {
+  text-transform: none;
+}
+.section-4 .content button,
+.section-4 .content input,
+.section-4 .content select,
+.section-4 .content textarea {
+  color: #5a5a5a;
+  font: inherit;
+  margin: 0;
+}
+.section-4 .content input {
+  line-height: normal;
+}
+.section-4 .content textarea {
+  overflow: auto;
+  line-height: 150%;
+  height: 150px;
+  resize: none;
+  width: 100%;
+}
+.section-4 .content #container {
+  display: inline-block;
+  border: solid 3px #474544;
+  max-width: 650px;
+  margin: 60px auto;
+  position: relative;
+}
+.section-4 .content form {
+  padding: 37.5px;
+  margin: 25px 0;
+}
+.section-4 .content h1 {
+  color: #474544;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section-4 .content h3 {
+  color: #fc0d32;
+  font-size: 14px;
+  font-weight: 350;
+  letter-spacing: 7px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.section-4 .content .underline {
+  border-bottom: solid 2px #474544;
+  margin: -0.512em auto;
+  width: 80px;
+}
+.section-4 .content .email {
+  float: right;
+  width: 45%;
+}
+.section-4 .content input[type='text'],
+.section-4 .content [type='email'],
+.section-4 .content select,
+.section-4 .content textarea {
+  background: none;
+  border: none;
+  border-bottom: solid 2px #474544;
+  color: #474544;
+  font-size: 1em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0em 0 1.875em 0;
+  padding: 0 0 0.875em 0;
+  text-transform: uppercase;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.section-4 .content input[type='text']:focus,
+.section-4 .content [type='email']:focus,
+.section-4 .content textarea:focus {
+  outline: none;
+  padding: 0 0 0.875em 0;
+}
+.section-4 .content .message {
+  float: none;
+}
+.section-4 .content .name {
+  float: left;
+  width: 45%;
+}
+.section-4 .content select {
+  background: url("https://cdn4.iconfinder.com/data/icons/ionicons/512/icon-ios7-arrow-down-32.png") no-repeat right;
+  outline: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+}
+.section-4 .content select::-ms-expand {
+  display: none;
+}
+.section-4 .content .subject {
+  width: 100%;
+}
+.section-4 .content .telephone {
+  width: 100%;
+}
+.section-4 .content ::-webkit-input-placeholder {
+  color: #474544;
+}
+.section-4 .content :-moz-placeholder {
+  color: #474544;
+  opacity: 1;
+}
+.section-4 .content ::-moz-placeholder {
+  color: #474544;
+  opacity: 1;
+}
+.section-4 .content :-ms-input-placeholder {
+  color: #474544;
+}
+.section-4 .content #form_button {
+  background: none;
+  border: solid 2px #474544;
+  color: #474544;
+  cursor: pointer;
+  display: flex;
+  font-family: 'Helvetica', Arial, sans-serif;
+  font-size: 0.875em;
+  font-weight: bold;
+  outline: none;
+  padding: 20px 35px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.section-4 .content #form_button:hover {
+  background: #fc0d32;
+  color: #f2f3eb;
+}
+@media screen and (max-width: 768px) {
+  .section-4 .content #container {
+    margin: 20px auto;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .section-4 .content h1 {
+    font-size: 26px;
+  }
+  .section-4 .content .underline {
+    width: 68px;
+  }
+  .section-4 .content #form_button {
+    padding: 15px 25px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .section-4 .content h1 {
+    font-size: 16px;
+  }
+  .section-4 .content .icon {
+    height: 35px;
+    width: 35px;
+  }
+  .section-4 .content .underline {
+    margin: 2px auto;
+    width: 53px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .section-4 .content input[type='text'],
+  .section-4 .content [type='email'],
+  .section-4 .content select,
+  .section-4 .content textarea {
+    font-size: 0.875em;
+  }
+}

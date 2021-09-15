@@ -1,0 +1,39 @@
+section(class="canvas section-4" id="section-4")
+
+    h2 Kontakt
+
+    div(class="content")
+
+        div
+
+            #container
+                h1 &bull; Kontaktformular &bull;
+                .underline
+                br
+                br
+                h3 Du möchtest uns buchen?
+                h3 Fülle dazu einfach dieses Formular aus.
+                h3 Wir melden uns bei dir.
+                form#contact_form(action='https://submit-form.com/BuDOoQAD' method='post')
+                    .name
+                    label(for='name')
+                    input#name_input(type='text' placeholder='Dein Name' name='name' required='')
+                    .email
+                    label(for='email')
+                    input#email_input(type='email' placeholder='Deine E-Mail' name='email' required='')
+                    .telephone
+                    label(for='telephone')
+                    input#telephone_input(type='text' placeholder='Deine Telefonnummer' name='telephone' required='')
+                    .subject
+                    label(for='subject')
+                    select#subject_input(placeholder='Thema' name='subject' required='')
+                        option(disabled='' hidden='' selected='') Buchung
+                        option Feedback
+                        option Sonstiges
+                    .message
+                    label(for='message')
+                    textarea#message_input(name='message' placeholder="Kurze Beschreibung" cols='30' rows='5' required='')
+                    .submit
+                    input#form_button(type='submit' value='An Steelrise senden')
+    a(href="/#front")
+        +nav-1("front", "prev")

@@ -1,20 +1,6 @@
 {
   "name": "new-project",
   "version": "1.0.0",
-  "scripts": {
-    "start": "npm run develop",
-    "develop": "NODE_ENV=development gulp -S",
-    "build": "gulp build",
-    "test": "npm run lint",
-    "lint": "eslint --fix src/",
-    "preflight": "gulp preflight",
-    "deploy": "gulp deploy",
-    "serve": "gulp serve"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git@example.com:user/repository.git"
-  },
   "private": true,
   "license": "UNLICENSED",
   "homepage": "http://example.com",
@@ -63,5 +49,6 @@
     "rollup-plugin-eslint": "^7.0.0",
     "rollup-plugin-includepaths": "^0.2.3",
     "rollup-plugin-terser": "^5.3.0"
-  }
+  },
+  "dependencies": {}
 }

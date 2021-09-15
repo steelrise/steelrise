@@ -131,6 +131,7 @@ export default function() {
 
     // handle triggering of the compact menu via its button
     document.documentElement.addEventListener('click', (event) => {
+        console.error(event);
         if (event.target.matches('#navigation button') || event.target.matches('#navigation button *')) {
             (menu.style.display === 'block') ? fadeOut() : fadeIn();
         } else if (header.classList.contains(classCompactMenu) && menu.style.display === 'block') {

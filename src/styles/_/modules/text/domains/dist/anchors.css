@@ -1,0 +1,159 @@
+/*━━━━━━━━━━━━━━━━━━━━━━━━━━━━  ANCHORS  ━━━━━━━━━━━━━━━━━━━━━━━━━━━*/
+a {
+  text-decoration: none;
+}
+a:link {
+  color: _link;
+  text-decoration: none;
+}
+a:link svg {
+  fill: _link;
+}
+a:visited {
+  outline: none;
+  color: _visited;
+}
+a:visited svg {
+  fill: _visited;
+}
+a:hover {
+  color: _hover;
+}
+a:hover svg {
+  fill: _hover;
+}
+a:focus {
+  color: _focus;
+}
+a:focus svg {
+  fill: _focus;
+}
+a:active {
+  outline: none;
+  color: _active;
+}
+a:active svg {
+  fill: _active;
+}
+p a {
+  color: _link;
+  font-weight: inherit;
+}
+p a:hover {
+  text-decoration: underline;
+}
+p a:hover svg {
+  fill: _link;
+}
+nav a,
+.nav a {
+  font-family: $sans-serif;
+}
+button nav a,
+button .nav a {
+  text-decoration: none;
+}
+button nav a:link,
+button .nav a:link {
+  color: _nav_link;
+}
+button nav a:link svg,
+button .nav a:link svg {
+  fill: _nav_link;
+}
+button nav a:visited,
+button .nav a:visited {
+  color: _nav_visited;
+}
+button nav a:visited svg,
+button .nav a:visited svg {
+  fill: _nav_visited;
+}
+button nav a:hover,
+button .nav a:hover {
+  color: _nav_hover;
+}
+button nav a:hover svg,
+button .nav a:hover svg {
+  fill: _nav_hover;
+}
+button nav a:focus,
+button .nav a:focus {
+  color: _nav_focus;
+}
+button nav a:focus svg,
+button .nav a:focus svg {
+  fill: _nav_focus;
+}
+button nav a:active,
+button .nav a:active {
+  color: _nav_active;
+}
+button nav a:active svg,
+button .nav a:active svg {
+  fill: _nav_active;
+}
+header a:link {
+  color: _header_link;
+}
+header a:link svg {
+  fill: _header_link;
+}
+header a:visited {
+  color: _header_visited;
+}
+header a:visited svg {
+  fill: _header_visited;
+}
+header a:hover {
+  color: _header_hover;
+}
+header a:hover svg {
+  fill: _header_hover;
+}
+header a:focus {
+  color: _header_focus;
+}
+header a:focus svg {
+  fill: _header_focus;
+}
+header a:active {
+  color: _header_active;
+}
+header a:active svg {
+  fill: _header_active;
+}
+footer a {
+  transition: color 150ms;
+}
+footer a:link {
+  color: _footer_link;
+}
+footer a:link svg {
+  fill: _footer_link;
+}
+footer a:visited {
+  color: _footer_visited;
+}
+footer a:visited svg {
+  fill: _footer_visited;
+}
+footer a:hover {
+  color: _footer_hover;
+  text-decoration: none;
+}
+footer a:hover svg {
+  fill: _footer_hover;
+}
+footer a:focus {
+  color: _footer_focus;
+}
+footer a:focus svg {
+  fill: _footer_focus;
+}
+footer a:active {
+  color: _footer_active;
+}
+footer a:active svg {
+  fill: _footer_active;
+}

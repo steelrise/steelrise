@@ -1,6 +1,8 @@
-import { scroll } from 'libs/internal/animation';
+import { scroll } from 'libs/animation';
 
 export default function() {
+
+    console.log('Test');
 
     // preflight checks
     if (!document.querySelector('.nav-1')) return;
@@ -24,7 +26,7 @@ export default function() {
 
         let target = document.querySelector(`#${ trigger.attributes['data-target'].value }`);
 
-        trigger.addEventListener('click', function(event) {
+        trigger.querySelector('button').addEventListener('click', function(event) {
 
             // prefer native implementation
             if ('scrollBehavior' in document.documentElement.style) {
@@ -36,7 +38,7 @@ export default function() {
                 scroll(target.offsetTop, duration);
 
             }
-            event.stopPropagation;
+            event.stopPropagation();
         });
     }
 
